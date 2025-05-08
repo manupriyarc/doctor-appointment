@@ -18,10 +18,12 @@ mongoose.connect(process.env.MONGODB_URI)
 const appointmentRoutes = require('./routes/appointmentRoutes');
 const feedbackRoutes = require('./routes/feedbackRoutes');
 const authRoutes = require("./routes/authRoutes");
+const doctorRoutes = require('./routes/doctorRoutes');
 
 app.use("/api/auth", authRoutes);
 app.use('/api/appointments', appointmentRoutes);
 app.use('/api/feedbacks', feedbackRoutes);
+app.use('/api/doctors', doctorRoutes);
 
 // Global error handler
 app.use((err, req, res, next) => {

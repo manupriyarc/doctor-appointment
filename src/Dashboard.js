@@ -35,7 +35,7 @@ const Dashboard = () => {
       <main className="main-content">
         <div className="header">
           <h2>Home</h2>
-          <span className="date">Today's Date: 2022-06-03</span>
+          <span className="date">Today's Date: 2025-06-03</span>
         </div>
 
         <section className="welcome-section">
